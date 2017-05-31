@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Test Total</title>
+    <link rel="stylesheet" href="css/app.css">
+
+  </head>
+
+  <body>
+    <header id="ac_sidebar" class="">
+        <div class="row ac_row">
+          <div class="col-md-12 col-sm-12 col-xs-12 ac_col">
+            <div class="ac_logo">
+              <a href="javascript:void()"><img src="images/logo/logo.png" alt="logo.png"></a>
+            </div>
+
+            <div class="ac_back_txt">Back to <strong>page</strong></div>
+
+            <div class="ac_back_btn">
+            	<div class="ac_btn_graphic">
+                	<i class="fa fa-angle-left" aria-hidden="true"></i>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </header>
+
+    <section class="wrapper">
+    	<div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+    				<div class="ac_container">
+                        <h1>Create your Finance Quote</h1>
+                        <p>Get your personalised AccessToyota quote and see how affordable your monthly payments can be.</p>
+                	</div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                	<div class="ac_toyotaVehicleImage">
+                    	<img src="images/no_image_available.png" border="0" />
+                    </div>
+                </div>
+
+            </div>
+    	</div>
+    </section>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="application/javascript">
+    $("document").ready(function($){
+
+    if ($(window).width() < 514) {
+    	//alert('portrait');
+        $('#ac_sidebar').addClass('portrait');
+    	$('#ac_sidebar').removeClass('desktop');
+    } else {
+    	//alert('desktop');
+    	$('#ac_sidebar').addClass('desktop');
+        $('#ac_sidebar').removeClass('portrait');
+    }
+
+    });
+    </script>
+</body>
+</html>

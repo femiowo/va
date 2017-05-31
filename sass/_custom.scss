@@ -1,0 +1,231 @@
+@import "_color.scss";
+
+@font-face {
+    font-family: toyotatext_rg;
+    src: url(../fonts/toyotatext_rg.ttf);
+}
+@font-face {
+    font-family: toyotatext_bd;
+    src: url(../fonts/toyotatext_bd.ttf);
+}
+@font-face {
+    font-family: toyotadisplay_bd;
+    src: url(../fonts/toyotadisplay_bd.ttf);
+}
+@font-face {
+    font-family: toyotadisplay_rg;
+    src: url(../fonts/toyotadisplay_rg.ttf);
+}
+body{
+    font-family: toyotatext_rg,Verdana,Geneva,Arial,Helvetica,sans-serif;
+	}
+
+#ac_sidebar.desktop{
+background-color:$bg_color_dark;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 73px;
+
+  .ac_row{
+  	margin-left:0px;
+  	margin-right:0px;
+  	}
+
+    .ac_col{
+    	height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        position: fixed;
+        width: 73px;
+    	}
+}
+
+#ac_sidebar.portrait{
+	background-color: $bg_color_dark;
+	overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	height:58px;
+
+
+  .ac_col{
+      position: fixed;
+      width: 100%;
+  	height:58px;
+  	}
+
+    .ac_back_btn{
+    	right:0;
+    	left:auto;
+    	}
+
+      .ac_logo{
+      	position:relative;
+      	top:-5px;
+      	}
+
+        .ac_btn_graphic{
+        	height: 38px;
+            left: 40px;
+            line-height: 38px;
+            padding-top: 1px;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            width: 38px;
+        	}
+
+          .ac_back_txt {
+              bottom: 17px;
+              color: $text_color_white;
+              display: block;
+              font-size: 14px;
+              left: auto;
+              padding-left: 20px;
+              position: absolute;
+              right: 63px;
+              text-align: left;
+              transform: rotate(0deg);
+              transform-origin: 0 0 0;
+              white-space: nowrap;
+          }
+	}
+
+.ac_row{
+  .ac_back_txt{
+    bottom: 45px;
+      font-size: 17px;
+      left: 22px;
+      padding-left: 20px;
+      transform: rotate(270deg);
+      transform-origin: 0 0 0;
+    display:block;
+    position: absolute;
+      text-align: left;
+      white-space: nowrap;
+    color:$text_color_white;
+    }
+
+    .ac_back_btn{
+    	height: 73px;
+        width: 73px;
+    	bottom:0px;
+    	left:0px;
+    	position:absolute;
+    	display:block;
+
+      .ac_btn_graphic{
+          height: 47px;
+          left: 12px;
+          line-height: 47px;
+          position: absolute;
+          top: 12px;
+          width: 47px;
+      	background-color: $bg_color_white;
+          background-image: linear-gradient(180deg, #fff 0px, #e9eaec 100%);
+          border-radius: 3px;
+          display: table-cell;
+          font-size: 2rem;
+          padding-top: 2px;
+          position: relative;
+          text-align: center;
+          vertical-align: middle;
+      	}
+      }
+}
+
+	/*
+.ac_logo{
+
+	}
+
+.ac_logo img{
+
+	}
+
+
+	*/
+
+
+section.wrapper {
+    margin-left: 73px;
+
+    .ac_container{
+    	padding:62px 5px 25px;
+
+      h1{
+      	font-family: toyotatext_rg,Verdana,Geneva,Arial,Helvetica,sans-serif;
+          font-size: 28px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0 0 5px;
+          text-transform: uppercase;
+      	}
+
+        p{
+         font-size:15px;
+         }
+
+    	}
+
+
+
+}
+
+
+
+.ac_toyotaVehicleImage{
+	text-align:center;
+	}
+
+.ac_toyotaVehicleImage img{
+	height:330px;
+	}
+
+
+
+
+
+
+
+
+
+
+/*-- For Responsive --*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 240px) and (max-width: 767px) {
+
+.ac_container h1 {
+    font-family: toyotatext_rg,Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 11px 0 7px;
+    text-transform: uppercase;
+}
+
+.ac_container p {
+    font-size: 14px;
+}
+
+.ac_container {
+    padding: 62px 0 25px;
+}
+
+section.wrapper {
+    margin-left: 0px;
+}
+
+.ac_toyotaVehicleImage img {
+    height: auto;
+    width: 100%;
+}
+
+}
